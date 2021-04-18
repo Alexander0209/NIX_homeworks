@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    background-color: white;
+}
+
 @font-face {
     font-family: ChampionsLeague;
     src: url(../fonts/ChampionsLeague.ttf);
@@ -11,6 +15,12 @@
 header {
     display: block;
     position: fixed;
+    top: 0;
+    height: 140px;
+    width: 100%;
+}
+
+.wrapper {
     background-color: #cae4fc;
     height: 100px;
     width: 100%;
@@ -19,9 +29,8 @@ header {
 
 .container {
   width: 75%;
-  
   margin: 0 auto;
-  background-color: khaki;
+  
 }
 
 .logo {
@@ -29,7 +38,7 @@ header {
 }
 
 .logo img {
-    height: 100px;
+    height: 95px;
     vertical-align: middle;
 }
 
@@ -40,8 +49,68 @@ header {
 
 .navigation {
     clear: both;
+    width: 100%;
+    margin: auto;
+    height: 40px;
+    background-color: #4495e0;
+    
 }
 
 .navigation ul {
     list-style-type: none;
+    height: inherit;
+    width: 75%;
+    margin: auto;
 }
+
+.navigation li {
+    height: inherit;
+    float: left;
+}
+
+.navigation li a {
+    height: inherit;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 0 20px 0 20px;
+    color: rgb(255, 255, 255);
+    font-family: ChampionsLeague;
+}
+
+.navigation li a:hover {
+    background-color: lightblue;
+    color: #003d75;
+}
+
+
+main {
+
+    margin-top: 140px;
+}
+
+.scroll-indicator {
+    height: 8px;
+}
+
+@supports (height: 100vh) {
+    body{
+     background: linear-gradient(to right top, rgb(68, 0, 255) 50%, #a9daff 50%);
+     background-size: 100% calc(100% - 100vh + 148px);
+     background-repeat: no-repeat;
+    }
+  
+    body:before{
+     content:'';
+     position: fixed;
+     top: 148px;
+     bottom: 0;
+     width: 100%;
+     z-index: -1;
+     background: white;
+    }
+  }
+
+
+
