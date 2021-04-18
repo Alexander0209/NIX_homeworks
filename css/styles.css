@@ -1,3 +1,47 @@
-h1 {
-    color: red;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: ChampionsLeague;
+    src: url(../fonts/ChampionsLeague.ttf);
+}
+
+header {
+    display: block;
+    position: fixed;
+    background-color: #cae4fc;
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+}
+
+.container {
+  width: 75%;
+  
+  margin: 0 auto;
+  background-color: khaki;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    height: 100px;
+    vertical-align: middle;
+}
+
+.brand-name {
+    font-family: ChampionsLeague;
+    font-size: 4vw;
+}
+
+.navigation {
+    clear: both;
+}
+
+.navigation ul {
+    list-style-type: none;
 }
