@@ -84,9 +84,36 @@ header {
     color: #003d75;
 }
 
-
 main {
     margin-top: 148px;
+    margin-bottom: 125px;
+}
+
+.news-title {
+    color: #0400db;
+    font-family: ChampionsLeague;
+    font-size: 2vw;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.news-post {
+    width: 90%;
+    margin: auto;
+}
+
+.news-content {
+    text-indent: 30px;
+    font-family: ChampionsLeague;
+    color: #010050;
+    font-size: 1.25vw;
+}
+
+.news-img {
+    max-width: 50%;
+    float: left;
+    margin: 0 30px 20px 0;
+    box-shadow: 10px 10px 20px #010050;
 }
 
 @supports (height: 100vh) {
@@ -108,6 +135,7 @@ main {
   }
 
 footer {
+    margin-top: 100px;
     height: 75px;
     width: 100%;
     position: fixed;
@@ -117,10 +145,147 @@ footer {
     line-height: 75px;
 }
 
+.accrodion {  
+    width: 60%;
+    margin: auto;
+    height: 240px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+ul.accrodion-list {
+    display: flex;
+    justify-content: center;
+}
+
+ul.accrodion-list li {
+   width: 70px;
+   overflow: hidden;
+   padding: 1px 1px 0;
+}
+
+.accrodion li {
+    list-style-type: none;
+    width: 20%;
+    transition: all 1.5s;
+}
+
+.accrodion-item {
+    text-align: center;
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+}
+
+.accrodion-item img{
+    width: 80%;
+    justify-content: center;
+}
+
+.accrodion-item p {
+    font-family: ChampionsLeague;
+    font-size: 1.2vw;
+    color: #26008f;
+}
+
+ul.accrodion-list li:hover {
+    width: 200px;
+    transition: all 1s;
+}
+
+.accrodion-title {
+    text-align: center;
+    font-family: ChampionsLeague;
+    font-size: 2vw;
+    color: #26008f;
+}
+
+.accrodion-list li:first-child {
+    background: linear-gradient(to left,rgb(160, 178, 255), #91caff );
+}
+
+.accrodion-list li:nth-child(2){
+    background: linear-gradient(to left,rgb(189, 223, 255), #0d73d3 );
+}
+
+.accrodion-list li:nth-child(3){
+    background: linear-gradient(to left,rgb(233, 255, 153), #eeff00 );
+}
+
+.accrodion-list li:nth-child(4){
+    background: linear-gradient(to left,rgb(255, 170, 170), #ff0000 );
+}
+
+.accrodion-list li:nth-child(5){
+    background: linear-gradient(to left,rgb(131, 255, 141), #14d30d );
+}
+
+.accrodion-list li:last-child {
+    background: linear-gradient(to left,rgb(224, 144, 255), #9900ff );
+
+}
+
+.forma {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    height: 450px;
+    background-image: url("../images/form_back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px #0018ed solid;
+    border-radius: 20px;
+    box-shadow: 0 -5px 5px 0 #4557ff;
+    text-align: center;
+}
+
+
 .copy-right {
     font-family: ChampionsLeague;
     font-size: 1.2vw;
     color: white;
 }
 
+.options {
+    margin-top: 30px;
+    color: #fff;
+    font-family: ChampionsLeague;
+    font-size: 1.3vw;
+}
 
+.forma input {
+    margin-left: 20px;
+    width: 50%;
+    height: 30px;
+    font-size: 1.1vw;
+    color: #010050;
+}
+
+
+.buttons {
+    margin-top: 30px;
+}
+
+button {
+    background-color: #3628ff;
+    color: #fff;
+    font-family: ChampionsLeague;
+    font-size: 1.2vw;
+    border: 2px #a9daff solid;
+    padding: 10px;
+    margin: 0px 30px 0px 30px;
+    width: 20%;
+}
+
+button:hover, button:active{
+    background-color: #fff;
+    color: #3628ff;
+    font-family: ChampionsLeague;
+    border: 2px #26008f solid;
+    border-radius: 50%;
+} 
+
+.options input:invalid {
+    border: red 5px dashed;
+}
